@@ -1,6 +1,6 @@
 package za.ac.cput.carrental.factory;
 
-/* CarFactory.java
+/* CarFactoryTests.java
      Car Class
      Author: Malwandla Blessing Mahori (230962963)
      Date: 21 June 2026 */
