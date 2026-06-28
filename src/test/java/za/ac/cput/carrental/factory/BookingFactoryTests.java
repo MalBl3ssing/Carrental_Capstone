@@ -11,7 +11,6 @@ public class BookingFactoryTests {
     @Test
     void testCreateBooking_Success(){
         Booking booking = BookingFactory.createBooking(
-                "B001",
                 "M001",
                 "C001",
                 "2026-09-01",
@@ -19,18 +18,17 @@ public class BookingFactoryTests {
                 1700.00
         );
         assertNotNull(booking);
-        assertEquals("B001",booking.getBookingId());
+        assertNotNull(booking.getBookingId());
         assertEquals("M001", booking.getMemberId());
         assertEquals("C001", booking.getCarId());
         assertEquals("2026-09-01", booking.getStartDate());
         assertEquals("2026-09-05", booking.getEndDate());
-        assertEquals(1800.00, booking.getTotalCost());
+        assertEquals(1700.00, booking.getTotalCost());
     }
 
     @Test
     void testCreateBooking_NotNull() {
         Booking booking = BookingFactory.createBooking(
-                "B002",
                 "M002",
                 "C002",
                 "2026-10-01",
@@ -41,9 +39,8 @@ public class BookingFactoryTests {
     }
 
     @Test
-    void testCalculationgRentalDuration(){
+    void testCalculateRentalDuration(){
         Booking booking = BookingFactory.createBooking(
-                "B003",
                 "M003",
                 "C001",
                 "2026-09-01",

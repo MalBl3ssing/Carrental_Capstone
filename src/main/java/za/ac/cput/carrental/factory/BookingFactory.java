@@ -11,8 +11,7 @@ import za.ac.cput.carrental.domain.Booking;
 import za.ac.cput.carrental.util.Helper;
 
 public class BookingFactory {
-    public static Booking createBooking(String bookingId,
-                                        String memberId,
+    public static Booking createBooking(String memberId,
                                         String carId,
                                         String startDate,
                                         String endDate,
